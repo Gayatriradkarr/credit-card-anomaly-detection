@@ -1,2 +1,54 @@
-# credit-card-anomaly-detection
-Behavior-based anomaly detection in credit card transactions using statistical rules
+# Credit Card Anomaly Detection Using Behavioral Rules and Statistical Profiling
+
+This project analyzes anonymized credit card transaction data to identify unusual activity using only rule-based methods and statistical profiling — no machine learning. The focus is on understanding transaction patterns through user behavior, time-based analysis, and threshold logic that mirrors real-world fraud detection systems.
+
+---
+
+## Project Objectives
+
+- Detect anomalies in transactions based on behavior, not models
+- Flag potential fraud using business rules and visual analysis
+- Create a clean, readable process for non-technical stakeholders to follow
+
+---
+
+## Techniques Used
+
+1. **Exploratory Data Analysis (EDA)**
+   - Amount distribution, time-of-day analysis
+   - Transaction frequency per user
+
+2. **Rule-Based Anomaly Detection**
+   - Flagging transactions above the 99th percentile
+   - Identifying multiple transactions in short time frames
+   - Highlighting transactions during off-hours (e.g., 2–4 AM)
+
+3. **Statistical Profiling**
+   - Z-score detection to find spending spikes
+   - User-level behavior baseline comparison
+
+4. **Time-Based Pattern Recognition**
+   - Daily and hourly spending heatmaps
+   - Inter-transaction time gap analysis
+
+---
+
+## Tools Used
+
+- Python (Pandas, NumPy)
+- Jupyter Notebook
+- Matplotlib, Seaborn for visualizations
+- Optional: Excel/CSV output for flagged transactions
+
+---
+
+## Folder Structure
+credit-card-anomaly-rules/
+├── data/ # Input dataset (e.g., creditcard.csv)
+├── notebooks/ # Analysis notebooks
+├── rules_output/ # Flagged anomaly reports (CSV)
+├── visuals/ # Graphs, heatmaps, behavior plots
+└── README.md # This file
+
+
+
