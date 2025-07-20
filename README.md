@@ -1,2 +1,2 @@
 # credit-card-anomaly-detection
-Unsupervised anomaly detection using Isolation Forest &amp; LOF on credit card transactions
+Behavior-based anomaly detection in credit card transactions using statistical rules
