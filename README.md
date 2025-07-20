@@ -43,12 +43,11 @@ This project analyzes anonymized credit card transaction data to identify unusua
 ---
 
 ## Folder Structure
-credit-card-anomaly-rules/
-├── data/ # Input dataset (e.g., creditcard.csv)
-├── notebooks/ # Analysis notebooks
-├── rules_output/ # Flagged anomaly reports (CSV)
-├── visuals/ # Graphs, heatmaps, behavior plots
-└── README.md # This file
+notebooks/   – Jupyter notebooks containing rule logic and analysis  
+data/        – Credit card transaction dataset (CSV or Excel)  
+dashboards/  – Dashboard files (e.g., Streamlit, Excel, or Tableau if extended)  
+visuals/     – Screenshots of plots, charts, and dashboard views  
+README.md    – This project overview and documentation  
 
 
 
