@@ -1,50 +1,55 @@
-# Credit Card Anomaly Detection Using Behavioral Rules and Statistical Profiling
+##Credit Card Anomaly Detection Using Behavioral Rules and Statistical Profiling
+This project simulates a rule-based fraud detection system for credit card transactions using behavioral analytics and statistical profiling. The objective was to identify suspicious activity by examining deviations from normal user patterns — using transparent, interpretable logic rather than opaque machine learning models.
 
-This project analyzes anonymized credit card transaction data to identify unusual activity using only rule-based methods and statistical profiling — no machine learning. The focus is on understanding transaction patterns through user behavior, time-based analysis, and threshold logic that mirrors real-world fraud detection systems.
+Project Objective
+To detect anomalous transactions by:
 
----
+Profiling user behavior over time
 
-## Project Objectives
+Defining business logic that mimics real-world fraud detection rules
 
-- Detect anomalies in transactions based on behavior, not models
-- Flag potential fraud using business rules and visual analysis
-- Create a clean, readable process for non-technical stakeholders to follow
+Providing clean, interpretable outputs for risk analysis teams
 
----
 
-## Techniques Used
+Methodology
+ 1. Exploratory Data Analysis (EDA)
+Assessed transaction amount distribution and frequency
 
-1. **Exploratory Data Analysis (EDA)**
-   - Amount distribution, time-of-day analysis
-   - Transaction frequency per user
+Identified time-of-day spending trends
 
-2. **Rule-Based Anomaly Detection**
-   - Flagging transactions above the 99th percentile
-   - Identifying multiple transactions in short time frames
-   - Highlighting transactions during off-hours (e.g., 2–4 AM)
+Segmented activity patterns by user
 
-3. **Statistical Profiling**
-   - Z-score detection to find spending spikes
-   - User-level behavior baseline comparison
+ 2. Rule-Based Detection
+Flagged transactions above the 99th percentile
 
-4. **Time-Based Pattern Recognition**
-   - Daily and hourly spending heatmaps
-   - Inter-transaction time gap analysis
+Detected multiple transactions in rapid succession
 
----
+Highlighted off-hour activity (e.g., 2 AM–4 AM), which may indicate bot or compromised card usage
 
-## Tools Used
+3. Statistical Profiling
+Applied Z-score analysis to detect sudden spending spikes
 
-- Python (Pandas, NumPy)
-- Jupyter Notebook
-- Matplotlib, Seaborn for visualizations
-- Optional: Excel/CSV output for flagged transactions
+Compared transactions against user-specific behavior baselines
 
----
+ 4. Time-Based Analysis
+Built heatmaps to visualize hourly and daily spend
 
-## Folder Structure
-notebooks/   – Jupyter notebooks containing rule logic and analysis  
-data/        – Credit card transaction dataset (CSV or Excel)  
+Measured inter-transaction gaps to catch abnormal activity
+
+Tools Used
+Python (Pandas, NumPy) – Data processing and logic building
+
+Jupyter Notebook – Stepwise documentation and reproducibility
+
+Matplotlib, Seaborn – Pattern visualization and risk communication
+
+Excel/CSV Export – Final flagged transactions for operational review
+
+Folder Structure
+notebooks/   – All analysis steps and business rules in Jupyter format  
+data/        – Anonymized credit card transaction dataset  
+dashboards/  – Visual reports and summaries  
+
 dashboards/  – Dashboard files (e.g., Streamlit, Excel, or Tableau if extended)  
 visuals/     – Screenshots of plots, charts, and dashboard views  
 README.md    – This project overview and documentation  
