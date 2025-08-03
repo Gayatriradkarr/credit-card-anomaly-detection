@@ -37,10 +37,10 @@ To detect anomalous transactions by:
 - Excel/CSV Export – Final flagged transactions for operational review  
 
 ## Folder Structure
-notebooks/ – All analysis steps and business rules in Jupyter format
-data/ – Anonymized credit card transaction dataset
-dashboards/ – Dashboard files (e.g., Streamlit, Excel, or Tableau if extended)
-visuals/ – Screenshots of plots, charts, and dashboard views
-README.md – This project overview and documentation
+-notebooks/ – All analysis steps and business rules in Jupyter format
+-data/ – Anonymized credit card transaction dataset
+-dashboards/ – Dashboard files (e.g., Streamlit, Excel, or Tableau if extended)
+-visuals/ – Screenshots of plots, charts, and dashboard views
+-README.md – This project overview and documentation
 
 
