@@ -1,0 +1,21 @@
+Transaction_ID,User_ID,Transaction_Amount,Transaction_Date,Merchant,Location,Transaction_Type,Card_Type,Is_Fraud,Z_Score_Amount,Rule_Flag
+T001,U001,150.75,2025-08-01 14:30:00,Online_Retail,New York,Online,Visa,No,0.5,None
+T002,U001,45.20,2025-08-01 15:00:00,Grocery,New York,POS,Visa,No,0.1,None
+T003,U002,1200.00,2025-08-01 02:15:00,Online_Retail,London,Online,Mastercard,Yes,3.2,High_Amount,Off_Hour
+T004,U002,300.50,2025-08-01 02:20:00,Online_Retail,London,Online,Mastercard,Yes,1.8,Rapid_Succession,Off_Hour
+T005,U003,75.00,2025-08-01 10:00:00,Restaurant,Chicago,POS,Visa,No,0.3,None
+T006,U003,80.25,2025-08-01 12:30:00,Grocery,Chicago,POS,Visa,No,0.4,None
+T007,U001,500.00,2025-08-02 09:00:00,Travel,Paris,Online,Visa,No,1.5,None
+T008,U004,2500.00,2025-08-02 03:00:00,Electronics,Tokyo,Online,Mastercard,Yes,3.5,High_Amount,Off_Hour
+T009,U004,100.00,2025-08-02 03:05:00,Electronics,Tokyo,Online,Mastercard,Yes,0.6,Rapid_Succession,Off_Hour
+T010,U002,200.75,2025-08-02 14:00:00,Online_Retail,London,Online,Mastercard,No,1.0,None
+T011,U003,60.00,2025-08-02 18:00:00,Restaurant,Chicago,POS,Visa,No,0.2,None
+T012,U001,125.30,2025-08-03 11:00:00,Grocery,New York,POS,Visa,No,0.4,None
+T013,U004,1500.00,2025-08-03 13:00:00,Travel,Sydney,Online,Mastercard,No,2.5,High_Amount
+T014,U002,90.50,2025-08-03 16:00:00,Grocery,London,POS,Mastercard,No,0.3,None
+T015,U003,300.00,2025-08-03 20:00:00,Online_Retail,Chicago,Online,Visa,No,1.2,None
+T016,U001,2000.00,2025-08-04 02:45:00,Electronics,New York,Online,Visa,Yes,3.0,High_Amount,Off_Hour
+T017,U004,110.25,2025-08-04 09:30:00,Grocery,Sydney,POS,Mastercard,No,0.5,None
+T018,U002,400.00,2025-08-04 10:00:00,Travel,London,Online,Mastercard,No,1.3,None
+T019,U003,85.00,2025-08-04 15:00:00,Restaurant,Chicago,POS,Visa,No,0.3,None
+T020,U001,130.50,2025-08-04 17:00:00,Online_Retail,New York,Online,Visa,No,0.5,None
